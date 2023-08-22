@@ -1,32 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./dist/output.css"/>
-    <title>Ui project with tailwind css</title>
-</head>
-<body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./dist/output.css" />
+		<title>Ui project with tailwind css</title>
+	</head>
+	<body>
+		<nav class="container mx-auto p-6">
+			<div class="flex item-center justify-between">
+				<div>
+					<img src="./dist/images/logo-light.png" alt="logo" width="200px" />
+				</div>
+				<div class="hidden md:flex space-x-6 items-center">
+					<a href="#" class="text-slate-900 hover:text-orange-500">Portfolio</a>
+					<a href="#" class="text-slate-900 hover:text-orange-500">About</a>
+					<a href="#" class="text-slate-900 hover:text-orange-500">Contact</a>
+					<a href="#" class="text-slate-900 hover:text-orange-500">Social</a>
+					<a
+						href="#"
+						class="py-2 px-6 rounded-full text-white bg-orange-500 hover:bg-slate-800"
+						id=""
+						>Call Me</a
+					>
+				</div>
+			</div>
+		</nav>
+		<section id="hero">
+			<div
+				class="container mx-auto px-6 space-x-6 flex flex-col-reverse md:flex-row">
+				<div
+					class="md:w-1/2 flex flex-col justify-center space-y-5 py-8 text-center md:text-left text-slate-900">
+					<h1 class="font-bold text-3xl md:text-5xl">
+						Rapidly build modern websites without ever leaving your HTML.
+					</h1>
+					<p>
+						A utility-first CSS framework packed with classes like flex, pt-4,
+						text-center and rotate-90 that can be composed to build any design,
+						directly in your markup.
+					</p>
+					<a
+						href=""
+						class="py-2 px-6 rounded-full self-center md:self-start text-white bg-orange-500 hover:bg-slate-900"
+						>Get Started</a
+					>
+				</div>
 
-<nav class="container mx-auto p-6">
-<div class="flex item-center justify-between">
-    <div>
-        <img src="./dist/images/logo-light.png" alt="logo" width="200px">
-    </div>
-    <div class=" hidden md:flex space-x-6 items-center ">
-        <a href="#" class="text-slate-900  hover:text-orange-500">Portfolio</a>
-        <a href="#" class="text-slate-900  hover:text-orange-500">About</a>
-        <a href="#" class="text-slate-900  hover:text-orange-500">Contact</a>
-        <a href="#" class="text-slate-900  hover:text-orange-500">Social</a>
-        <a href="#" class=" py-2 px-6 rounded-full text-white bg-orange-500 hover:bg-slate-800" id="">Call Me</a>
-    </div>
-</div>
-</nav>
-
-
-
-
-
-
-</body>
+				<div class="md:w-1/2">
+					<img src="./dist/images/undraw_learning_sketching_nd4f.svg" alt="" />
+				</div>
+			</div>
+		</section>
+	</body>
 </html>
